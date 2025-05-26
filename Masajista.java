@@ -28,4 +28,19 @@ public abstract class Masajista extends SuperInicio{
         this.aniosExperiencia = aniosExperiencia;
     }
 
+    // Métodos abstractos que deben ser implementados por las subclases
+    @Override
+    public void concentrarse() {
+        System.out.println("El masajista " + getNombre() + " " + getApellido() + " se está concentrando.");
+    }
+
+    @Override
+    public void viajar() {
+        System.out.println("El masajista " + getNombre() + " " + getApellido() + " está viajando con el equipo.");
+    }
+
+    // Métodos específicos de la clase Masajista
+    public void darMasaje() {
+        System.out.println("El masajista " + getNombre() + " " + getApellido() + " está dando un masaje.");
+    }
 }
