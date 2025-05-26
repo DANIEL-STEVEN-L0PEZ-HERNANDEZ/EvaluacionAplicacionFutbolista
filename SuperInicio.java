@@ -47,11 +47,7 @@ public abstract class SuperInicio {
         this.edad = edad;
     }
 
-    public void concentrarse(){
-        System.out.println("Concentrándose...");
-    }
+    public abstract void concentrarse();
 
-    public void viajar(){
-        System.out.println("Viajando...");
-    }
+    public abstract void viajar();
 }
